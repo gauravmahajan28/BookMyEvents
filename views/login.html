@@ -1,0 +1,48 @@
+
+<div class="col-sm-9">
+
+
+	   <div style="height: 305px">
+    <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+      <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+        <img ng-src="{{slide.image}}" style="margin:auto;">
+        <div class="carousel-caption">
+          <h4>Slide {{slide.id}}</h4>
+          <p>{{slide.text}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  </div>
+
+  <div class="col-sm-3">
+<md-content md-theme="docs-dark" layout-gt-sm="row" layout-padding>
+    <div>
+      <md-input-container>
+        <label>Email</label>
+        <input ng-model="user.title" type="email">
+      </md-input-container>
+
+      <md-input-container>
+        <label>Password</label>
+        <input ng-model="user.email" type="passoword">
+      </md-input-container>
+    </div>
+  </md-content>
+
+
+    <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+     
+      <md-button class="md-raised md-primary">Login</md-button>
+      <md-button ng-disabled="true" class="md-raised md-primary">SignUp</md-button>
+      <md-button class="md-raised md-warn">Forget Password ?</md-button>
+      
+    </section>
+
+
+  </div>

@@ -1,0 +1,132 @@
+<!-- index.html -->
+    <!DOCTYPE html>
+    <html >
+    <head>
+      <!-- SCROLLS -->
+      <!-- load bootstrap and fontawesome via CDN -->
+    <!--  <link rel="stylesheet" href="../css/bootstrap.min.css" />  -->
+      <link rel="stylesheet" href="../css/app.css" /> 
+       <link rel="stylesheet" href="../css/bootstrap-ui.min.css" /> 
+      <link rel="stylesheet" href="../css/angular-material.min.css" /> 
+      <link rel="stylesheet" href="../css/ui-bootstrap-csp.css" /> 
+    <!--   <link rel="stylesheet" href="../css/angular-carousel.min.css" />  -->
+       
+ 
+      <!-- SPELLS -->
+      <!-- load angular and angular route via CDN -->
+        <!--  <script src="../js/lib/bootstrap-ui.min.js"></script> -->
+          <script src="../js/lib/angular.min.js"></script>
+          <script src="../js/lib/angular-material.min.js"></script>
+            <script src="../js/lib/angular-messages.min.js"></script>
+            <script src="../js/lib/angular-sanitize.min.js"></script>
+             <script src="../js/lib/angular-aria.min.js"></script>
+                 <script src="../js/lib/angular-animate.min.js"></script>
+              
+          <script src="../js/lib/angular-route.min.js"></script>
+          <script src="../js/lib/angular-touch.min.js"></script>
+         <!--  <script src="../js/lib/angular-carousel.min.js"></script> -->
+           <script src="../js/lib/ui-bootstrap-tpls.js"></script>
+      <!--     <script src="../js/lib/bootstrap.min.js"></script>  -->
+          <script src="../js/app.js"></script>
+             <script src="../js/controllers/mainController.js"></script>
+              <script src="../js/controllers/aboutController.js"></script>
+               <script src="../js/controllers/contactController.js"></script>
+              
+    </head>
+    <body ng-cloak ng-controller="mainController" ng-app="eventsGoingNotGoingApp">
+<nav class="navbar navbar-static-top navbar-primary">
+    <div class="container">
+        <!-- Brand and menu toggle -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#kssMenu">
+                <span class="sr-only">Menu</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand offset-right-large" title="Bootstrap UI">Bootstrap UI</a>
+        </div>
+        <!-- Collapsible menu -->
+        <div class="collapse navbar-collapse" id="kssMenu">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Dashboard</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Media</a></li>
+                <li><a href="#">Users</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="navbar-icon">
+                    <a href="#" target="_blank" title="Open site in a new tab">
+                        <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                        <span class="visible-xs">Home</span>
+                    </a>
+                </li>
+                <li class="navbar-icon">
+                    <a href="#" title="Settings">
+                        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                        <span class="visible-xs">Settings</span>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="My profile">
+                        <span class="glyphicon glyphicon-user offset-right" aria-hidden="true"></span>
+                        <span class="visible-xs-inline offset-right">My Profile</span>
+                        <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header">James Brown</li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-user offset-right icon-shift-down" aria-hidden="true"></span>
+                                My Account
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-off offset-right icon-shift-down" aria-hidden="true"></span>
+                                Sign out
+                            </a>
+                        </li>
+                    </ul>
+                </li><!-- .dropdown -->
+             </ul><!-- .nav -->
+        </div><!-- .collapsible -->
+    </div><!-- .container -->
+</nav>
+      <!-- MAIN CONTENT AND INJECTED VIEWS -->
+        <div id="main" style="height:80%">
+
+          <div ng-view></div>
+            <!-- angular templating -->
+            <!-- this is where content will be injected -->
+
+
+        </div>
+
+
+
+<footer role="contentinfo" class="footer">
+    <div class="container">
+       <div class="row">
+           <div class="col-md-6">
+              All Rights Reserved
+               <span class="footer-divider">|</span>
+               <a href="#" target="_blank">Contact</a>
+           </div>
+           <div class="col-md-6">
+               <a href="http://www.visionapps.cz" target="_blank" class="footer-author" title="Created by VisionApps">
+                   <img src="assets/images/visionapps.svg" width="90" height="16" alt="VisionApps" />
+               </a>
+           </div>
+       </div><!-- .row -->
+    </div><!-- .container -->
+</footer>
+
+
+
+
+
+    </body>
+    </html>
+
